@@ -1,0 +1,21 @@
+---
+import HorizontalCard from "./HorizontalCard.astro";
+
+const { project_group } = Astro.props;
+---
+
+<div>
+    <div class="text-3xl w-full font-bold mb-5">{project_group.header}</div>
+</div>
+
+{project_group.projects.map((project) => (
+    <div class="divider my-0"></div>
+
+    <HorizontalCard
+        title={project.title}
+        img={project.img}
+        desc={project.desc}
+        url={project.url}
+        badge={project.badge}
+    />
+))}
