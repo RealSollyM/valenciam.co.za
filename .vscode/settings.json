@@ -1,0 +1,11 @@
+{
+    "netlify.api_token": "nfp_bQHzzMLkdXoRfUwFhcEvbVdAS6pEWRpjf3a4",
+    "netlify.site_id": "e1ee04f2-a2a8-4c10-a1c4-7226f2feb42b",
+    "netlify.set_interval": 5,
+    "netlify.build_status_colors": {
+      "building": "orange",
+      "enqueued": "yellow",
+      "deploy-successful": "green",
+      "error": "red"
+    }
+}
