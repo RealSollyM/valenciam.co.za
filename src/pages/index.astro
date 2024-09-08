@@ -7,7 +7,6 @@ import Banner from "@components/Banner.astro";
 
 const homepage = await getEntry("homepage", "index");
 const { banner } = homepage.data;
-const { greeting, my_name, job_title, introduction } = banner;
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 

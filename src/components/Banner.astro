@@ -1,6 +1,6 @@
 ---
 const { banner } = Astro.props;
-const { greeting, my_name, job_title, introduction } = banner;
+const { greeting, my_name, job_title, introduction, button1, button2 } = banner;
 ---
 <div class="pb-12 mt-5">
     <div class="text-xl py-1">{ greeting }</div>
@@ -12,9 +12,9 @@ const { greeting, my_name, job_title, introduction } = banner;
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/Valencia_Mabika" target="_blank"> Let's connect!</a>
-      <a href="https://twitter.com/Valencia_Mabika" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href={ button1.link } target="_blank">{ button1.text }</a>
+      <a href={ button2.link } target="_blank" class="btn btn-outline ml-5">
+        { button2.text }
       </a>
     </div>
   </div>
