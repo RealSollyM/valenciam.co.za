@@ -1,0 +1,20 @@
+---
+const { banner } = Astro.props;
+const { greeting, my_name, job_title, introduction } = banner;
+---
+<div class="pb-12 mt-5">
+    <div class="text-xl py-1">{ greeting }</div>
+    <div class="text-5xl font-bold">{ my_name }</div>
+    <div class="text-3xl py-3 font-bold">{ job_title }</div>
+    <div class="py-2">
+      <text class="text-lg">
+        { introduction }
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="https://twitter.com/Valencia_Mabika" target="_blank"> Let's connect!</a>
+      <a href="https://twitter.com/Valencia_Mabika" target="_blank" class="btn btn-outline ml-5">
+        Get This template
+      </a>
+    </div>
+  </div>
